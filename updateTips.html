@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="./app.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+<body>
+<h2>
+    Mid-Autumn Festival Tips
+</h2>
+<div>
+    <div>Create Joke</div>
+    <form id="createTip" name="createTip" method="post" action="/createTip">
+        <input type="text" id="createTipSetup" required="required" placeholder="Write a tip here.">
+        <button class="button" type="submit" name="submit" value="submit">Create Joke</button>
+    </form>
+    <div id="createTipSuccess"></div>
+</div>
+<br>
+<div>
+    <div>Delete Tip</div>
+    <select id="allTip">
+    </select>
+    <button class="button" id="refreshTips">Refresh</button>
+    <button class="button" id="deleteTips">Delete</button>
+    <div id="deleteJokeSuccess"></div>
+</div>
+</body>
+</html>
